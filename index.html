@@ -3,31 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Noto+Sans+KR:wght@100..900&family=Quicksand:wght@300..700&family=Supermercado+One&display=swap" rel="stylesheet">
     <title>The Odin Project Journey</title>
     <style>
         * {
-            background-color: rgb(36, 35, 48);
+            font-family: "Comfortaa", sans-serif;
             color: grey;
+            margin: 0 auto;
         }
+        header {
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        body {
+            background-color: rgb(36, 35, 48);
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1 {
+            color: white;
+            padding: 25px;
+        }
+        section {
+            background-color: whitesmoke;
+            color: rgb(36, 33, 33);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 3px 3px 3px rgb(146, 146, 146);
+            margin: 2em;
+        }
+        code {
+            background-color: black;
+            color: rgb(121, 239, 255);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 3px 3px 3px rgb(146, 146, 146);
+            margin: 2em;
+            height: 155px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a:hover {
+            color: red;
+        }
+        
     </style>
 </head>
 <body>
     <h1>Homepage</h1>
-    <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener">About The Odin Project
-    </a>
-    <br>
-    <a href="pages/about.html">About</a>
-
-    <p><b>Reverse tabnapping</b> a type of attack you gotta be careful of. Especially when clicking links or buttons.
-    
-    <a href="https://www.youtube.com/watch?v=UljHVhI8-2k" title="don't worry this is straight YouTube">For example</a></p>
-
-    <p>so gotta use these attributes in an element: 
+    <hr>
+    <header>
+        <a style=" text-decoration: none;" href="https://www.theodinproject.com/about" target="_blank" rel="noopener">
+            About The Odin Project
+        </a>
+        <a style=" text-decoration: none;" href="pages/about.html">About</a>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h2>Reverse tabnapping</h2>
+            <p>
+                a type of attack you gotta be careful of. Especially when clicking links or buttons.
+            </p>
+            <br>    
+            <p>
+                <a href="https://www.youtube.com/watch?v=UljHVhI8-2k" title="don't worry this is straight YouTube">
+                    YouTube example of tabnapping
+                </a>
+            </p>
+            <br>
+            <p>so gotta use these attributes in an element to avoid getting tabnapped:</p>
+        </section>
         <code>
             &lt;a 
-            <mark>rel="noreferrer"</mark> or 
-            <mark>rel="nooopener"</mark>&gt;&lt;/a&gt;
+            rel="noreferrer"
+            or 
+            rel="noopener"
+            &gt;&lt;/a&gt;
         </code>
-    </p>
+        <section>
+             <p> There's 2 kinds of link
+                <ul>
+                    <li>Absolute <mark>https://www.examplewebsite.com</mark></li>
+                    <li>Relative <mark>file.html</mark></li>
+                </ul>
+            </p>
+        </section>
+        <section>
+            <h2>Images</h2>
+            <br>
+            <p>Absolute</p>
+            <img 
+            src="https://i.scdn.co/image/ab67616d00001e022238b40fec3aa1782bde689a" 
+            alt="toothless meme">
+            <p>
+                Funny Toothless picture <a 
+                    href="https://open.spotify.com/track/2balvmNQnlHmvOZDDLXe9f">
+                    source
+                </a>
+            </p>
+            <img 
+            src="https://www.theodinproject.com/mstile-310x310.png" alt="odin guy">
+            <p>
+                odin guy picture <a 
+                    href="https://www.theodinproject.com/lessons/foundations-links-and-images">
+                    source
+                </a>
+            </p>
+            <br>
+            <p>Relative</p>
+            <img 
+            src="Images/light-toothless-meme.png" 
+            alt="light fury and toothless">
+            <p>
+                Light fury & Toothless picture <a 
+                    href="https://sweezy-cursors.com/cursor/httyd-toothless-light-fury-dance-meme/">
+                    source
+                </a>
+            </p>
+        </section>
+    </main>
 </body>
 </html>

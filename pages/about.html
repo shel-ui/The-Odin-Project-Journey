@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Noto+Sans+KR:wght@100..900&family=Quicksand:wght@300..700&family=Supermercado+One&display=swap" rel="stylesheet">
     <title>Odin Links and Images</title>
+    <style>
+        * {
+            font-family: "Comfortaa", sans-serif;
+            color: grey;
+            margin: 0 auto;
+        }
+        header {
+            background-color: black;
+        }
+        h1 {
+            color: white;
+            padding: 25px;
+        }
+        body {
+            background-color: rgb(36, 35, 48);
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        section {
+            background-color: whitesmoke;
+            color: rgb(36, 33, 33);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 3px 3px 3px rgb(146, 146, 146);
+            margin: 2em;
+        }
+        img {
+            height: auto;
+            max-width: 100%;
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <h1>About Page</h1>
+    <header>
+        <h1>About Page</h1>
+    </header>
+    <div>
+        <section>
+            <img src="../Images/dog-meme.jpg" alt="picture of a dog">
+            <p><a href="https://cdnb.artstation.com/p/assets/images/images/050/540/377/large/remote-helpers-1-5.jpg?1655115570">picture source</a></p>
+        </section>
+    </div>
 </body>
 </html>
