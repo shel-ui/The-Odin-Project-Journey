@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intro CSS</title>
+    <style>
+        .bird {
+            background-color: blue;
+        }
+
+        .deer {
+            color: wheat;
+        }
+
+        .angel {
+            color: white;
+        }
+
+        .paint {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .space {
+            padding: 12px;
+        }
+
+        #unique {
+            background-color: red;
+        }
+
+        .sunflower {
+            background-color: yellow;
+        }
+
+        /* grouping selector */
+
+        .read, .unread {
+            color: white;
+            background-color: rgb(27, 26, 26);
+        }
+
+        .unread {
+            border-radius: 12px;
+        }
+
+        .subsection.header {
+            color: red;
+        }
+       h3.special-text {  /* targets heading 3 only */
+            color: blue;
+        }
+        .subsection#preview {
+            color: blue;
+        }
+        .ancestor .contents {
+            color: grey;
+            background-color: rgb(27, 27, 32);
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Intro to CSS</h1>
+    <h2>using Class & ID attributes</h2>
+    <p>These following texts are using 2 classes at once.</p>
+    <p><i>&#40;check the code behind in VS code&#41;</i></p>
+    <p class="space" id="unique">Hey there fella!</p>
+    <p class="angel bird space">Hello World!</p>
+    <p class="sunflower space">selectors can't start with a number</p>
+    <p class="read unread space">fourth lkasdfljaslkdj.</p>
+
+    <h2>Chaining Multiple Classes</h2>
+    <div>
+        <div class="subsection header">Latest Posts</div>
+        <p class="subsection preview">This is where a preview for a post might go.</p>
+    </div>
+
+    <h2>Chaining a Tag and a Class</h2>
+    <h3 class="special-text">Hello</h3>
+    <p class="special-text">Hello</p>
+
+    <div>
+        <div class="subsection header">Latest Posts</div>
+        <p class="subsection" id="preview">This is where a preview for post might go.</p>
+    </div>
+    <h2>Descendant combinator</h2>
+    <p><i>This targets the Descendant</i></p>
+    <div class="ancestor"> This is the outer div.
+        <div class="contents">
+            <div class="contents"> Pen pineapple apple pen, PPAP. I  have a pen, i have an apple, apple pen. I have a pen, I have pineapple, pen pineapple apple pen. Apple pen, Pineapple pen, Pen Pineapple Apple Pen</div>
+        </div>
+    </div>
+
+    <div class="contents">this is the last div</div>
+</body>
+</html>
